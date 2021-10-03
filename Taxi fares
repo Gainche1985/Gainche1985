@@ -1,0 +1,37 @@
+"""
+Taxi fares
+
+"""
+
+
+def compute_fare(distance, duration, drop_charge=2.60):
+    """
+    calculer la montant de la facture
+
+    args
+    ...
+    distance: a float
+    duration: a float
+    drop_charge: a float
+
+    return
+    ...
+    le fare en $: a float
+
+    """
+
+    distance_fare = distance * 2.70
+    duration_fare = duration * 0.50 
+
+    return distance_fare + duration_fare + drop_charge 
+
+
+result = compute_fare(10,50)
+
+print(result)
+result_2 = compute_fare(20,30)
+print(result_2)
+print("Le montant de la course est de {}$".format(result))
+
+# TODO: implement the compute_fare function.
+# NOTE: Don't forget to write a nice docsring
